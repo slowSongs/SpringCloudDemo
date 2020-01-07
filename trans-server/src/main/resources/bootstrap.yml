@@ -1,0 +1,12 @@
+spring:
+  application:
+    # 配置文件的前缀名称
+    name: microservice-foo
+cloud:
+  config:
+    # config配置中心服务地址
+    uri: http://localhost:10087/
+    # profile 对应git仓库中配置文件的名称
+    profile: dev
+    # 指定git仓库的分支
+    lable: master

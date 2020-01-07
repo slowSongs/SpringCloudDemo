@@ -1,0 +1,15 @@
+server:
+  port: 10087
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # 配置git仓库的地址(默认获取master上面的配置，需要获取其它分支配置请求地址上需带上分支名称)
+          uri: https://github.com/slowSongs/spring-cloud-config.git
+          # git仓库的账号
+          username: slowSongs
+          # git仓库的密码
+          password: 1132085314wjf

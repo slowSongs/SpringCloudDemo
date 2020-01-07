@@ -7,14 +7,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="config-server" />
         <module name="test-eureka" />
+        <module name="trans-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="business-server" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="SpringCloudDemo" target="1.8" />
+      <module name="test-eureka" target="1.8" />
+      <module name="trans-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="business-server" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="test-eureka" options="-parameters" />
+      <module name="trans-server" options="-parameters" />
     </option>
   </component>
 </project>

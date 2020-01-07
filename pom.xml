@@ -11,6 +11,8 @@
     <modules>
         <module>api-gateway</module>
         <module>test-eureka</module>
+        <module>config-server</module>
+        <module>trans-server</module>
     </modules>
 
     <parent>
